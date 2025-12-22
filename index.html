@@ -6,27 +6,118 @@
     <title>Item Local</title>
     <!-- Favicon -->
     <link rel="icon" type="image/svg" href="./assets/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/a7358111b0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="bg-neutral-900 text-white">
-    <!-- Footer -->
-    <header>
-      <!-- header left -->
-      <div>
-        <img src="" alt="" />
+  <body
+    class="max-w-[1920px] max-auto px-4 ms:px-2 md:px-8 lg:px-24 xl:px-54 bg-black text-white overflow-hidden antialiased"
+  >
+    <!-- Header (keep your rounded pill style) -->
+    <header
+      class="bg-neutral-900/40 backdrop-blur-md border-b border-neutral-800 sticky top-0 z-50 rounded-full mt-4"
+    >
+      <div
+        class="max-w-ful mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+      >
+        <!-- Logo & Brand -->
+        <div class="flex items-center space-x-2">
+          <img
+            src="./assets/logo.png"
+            alt="ZinZuu Logo"
+            class="h-12 w-12 object-contain"
+          />
+          <h1 class="plymdale text-4xl font-bold tracking-tight">ZinZuu</h1>
+          <!-- Fixed class to font-playfair -->
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="open-menu" class="text-3xl cursor-pointer">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-
-      <!-- Navbar -->
-      <nav></nav>
-
-      <!-- header right -->
-      <div></div>
     </header>
 
-    <!-- Main -->
-    <main></main>
+    <!-- Popup Contact Card (hidden by default) -->
+    <div
+      id="contact-popup"
+      class="fixed inset-0 z-[60] pointer-events-none flex items-start justify-center pt-32"
+    >
+      <!-- pt-32 = just below navbar -->
+      <!-- Backdrop -->
+      <div
+        id="popup-backdrop"
+        class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 transition-opacity duration-700 ease-out"
+      ></div>
 
-    <!-- Footer -->
-    <footer></footer>
+      <!-- Card Panel -->
+      <div
+        id="popup-card"
+        class="relative bg-gradient-to-b from-orange-500/90 to-orange-600/90 backdrop-blur-xl rounded-3xl shadow-2xl max-w-lg w-full mx-4 opacity-0 scale-90 transform transition-all duration-700 ease-out pointer-events-auto overflow-hidden"
+      >
+        <!-- Close Button (top right) -->
+        <div class="absolute top-4 right-4">
+          <button
+            id="close-menu"
+            class="text-white text-4xl hover:scale-110 transition-transform cursor-pointer"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Contact Content -->
+        <div class="p-12 pt-16 text-center text-white">
+          <!-- Extra pt for close button space -->
+          <h2 class="text-4xl md:text-5xl font-bold mb-8">Contact Us</h2>
+          <p class="text-lg md:text-xl leading-relaxed mb-10 opacity-90">
+            If you would like to talk to us directly please send us an email at:
+          </p>
+          <a
+            href="mailto:hello@zinzuu.com"
+            class="text-2xl md:text-3xl font-bold underline underline-offset-4 hover:text-orange-200 transition"
+          >
+            hello@zinzuu.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Updated Smooth Script -->
+    <script>
+      const openBtn = document.getElementById("open-menu");
+      const closeBtn = document.getElementById("close-menu");
+      const backdrop = document.getElementById("popup-backdrop");
+      const card = document.getElementById("popup-card");
+      const popupContainer = document.getElementById("contact-popup");
+
+      function openMenu() {
+        popupContainer.classList.remove("pointer-events-none");
+        backdrop.classList.remove("opacity-0");
+        backdrop.classList.add("opacity-100");
+        card.classList.remove("opacity-0", "scale-90");
+        card.classList.add("opacity-100", "scale-100");
+      }
+
+      function closeMenu() {
+        backdrop.classList.remove("opacity-100");
+        backdrop.classList.add("opacity-0");
+        card.classList.remove("opacity-100", "scale-100");
+        card.classList.add("opacity-0", "scale-90");
+
+        setTimeout(() => {
+          popupContainer.classList.add("pointer-events-none");
+        }, 700);
+      }
+
+      openBtn.addEventListener("click", openMenu);
+      closeBtn.addEventListener("click", closeMenu);
+      backdrop.addEventListener("click", closeMenu);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+    </script>
   </body>
 </html>

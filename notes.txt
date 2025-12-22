@@ -1,0 +1,48 @@
+Color Codes:
+Primary Color - #FD6A02
+Secondary Color - #AD1D00
+Text Color - #B3B09B, #FFFFFF
+Background Color - #171717
+Card Background - #101010
+
+font-family: 'Plymdale', sans-serif; (For Logo)
+font-family: "Anton", sans-serif; (For Heading)
+font-family: "Montserrat", sans-serif; (For Body Text)
+font-family: "Playfair Display", serif; (For the “OR” and in other places that could use a nice font break)
+
+/* Plymdale – decorative */
+@font-face {
+  font-family: 'Plymdale';
+  src: url('location') format('otf');
+  font-display: optional;
+  font-style: normal;
+}
+
+/* Anton – static */
+@font-face {
+  font-family: "Anton";
+  src: url("assets/fonts/Anton-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* Montserrat – variable */
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat.ttf") format("truetype");
+  font-style: normal;
+}
+
+
+/* Playfair Display – variable */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("assets/fonts/PlayfairDisplay.ttf") format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+#preview-render {
+  font-family: 'Plymdale', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 32px;
+  color: #373c44;
+}
