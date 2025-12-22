@@ -1,7 +1,7 @@
 /* Plymdale – decorative */
 @font-face {
   font-family: "Plymdale";
-  src: url("./fonts/Plymdale.otf") format("otf");
+  src: url("/fonts/Plymdale.otf") format("opentype");
   font-display: optional;
   font-style: normal;
 }
@@ -9,21 +9,21 @@
 /* Anton – static */
 @font-face {
   font-family: "Anton";
-  src: url("./fonts/Anton-Regular.ttf") format("truetype");
+  src: url("/fonts/Anton-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 /* Montserrat – variable */
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/Montserrat.ttf") format("truetype");
+  src: url("/fonts/Montserrat.ttf") format("truetype");
   font-style: normal;
 }
 
 /* Playfair Display – variable */
 @font-face {
   font-family: "Playfair Display";
-  src: url("./fonts/PlayfairDisplay.ttf") format("truetype");
+  src: url("/fonts/PlayfairDisplay.ttf") format("truetype");
   font-weight: 400 900;
   font-style: normal;
 }
