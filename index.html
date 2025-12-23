@@ -356,7 +356,7 @@
           <!-- CENTER MEDIA (main focus like reference video card) -->
           <div class="relative max-w-6xl mx-auto">
             <div
-              class="border border-white/10 bg-[#101010] p-6 rounded-2xl shadow-2xl"
+              class="relative rounded-2xl p-2 md:p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-950 bg-gradient-to-br from-[#101010] to-black hover:-translate-y-2 transition-transform duration-300"
             >
               <img
                 src="./assets/monopoly.png"
@@ -402,7 +402,7 @@
       </section>
 
       <section class="relative mt-28 text-white">
-        <div class="relative max-w-7xl mx-auto space-y-20">
+        <div class="relative max-w-7xl mx-auto space-y-8 md:space-y-20">
           <!-- TOP ROW -->
           <div class="flex flex-col lg:flex-row justify-between gap-12">
             <!-- Left -->
@@ -433,7 +433,7 @@
           <!-- CENTER MEDIA -->
           <div class="relative max-w-6xl mx-auto">
             <div
-              class="border border-white/10 bg-gradient-to-b from-[#151515] to-[#0e0e0e] p-6 rounded-2xl shadow-[0_30px_80px_rgba(0,0,0,0.6)] hover:scale-[1.01] transition-transform duration-500"
+              class="border border-white/10 bg-gradient-to-b from-[#151515] to-[#0e0e0e] p-2 md:p-6 rounded-2xl shadow-[0_30px_80px_rgba(0,0,0,0.6)] hover:scale-[1.01] transition-transform duration-500"
             >
               <img
                 src="./assets/monopoly.png"
@@ -444,10 +444,10 @@
           </div>
 
           <!-- BOTTOM CONTENT -->
-          <div class="grid lg:grid-cols-3 gap-14">
+          <div class="grid lg:grid-cols-3 gap-4 md:gap-14">
             <!-- Card 1 -->
             <div
-              class="relative  rounded-3xl p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-800 bg-gradient-to-br from-[#101010] to-black hover:-translate-y-2 transition-transform duration-300"
+              class="relative rounded-3xl p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-800 bg-gradient-to-br from-[#101010] to-[#101010] hover:-translate-y-2 transition-transform duration-300"
             >
               <div class="flex items-center mb-6">
                 <h4
@@ -473,7 +473,7 @@
 
             <!-- Card 2 -->
             <div
-              class="relative  rounded-3xl p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-800 bg-gradient-to-br from-[#101010] to-black hover:-translate-y-2 transition-transform duration-300"
+              class="relative rounded-3xl p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-800 bg-gradient-to-br from-[#101010] to-[#101010] hover:-translate-y-2 transition-transform duration-300"
             >
               <div class="flex items-center mb-6">
                 <h4
@@ -500,7 +500,7 @@
 
             <!-- Card 3 -->
             <div
-              class="relative  rounded-3xl p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-800 bg-gradient-to-br from-[#101010] to-black hover:-translate-y-2 transition-transform duration-300"
+              class="relative rounded-3xl p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-800 bg-gradient-to-br from-[#101010] to-[#101010] hover:-translate-y-2 transition-transform duration-300"
             >
               <div class="flex items-center mb-6">
                 <h4
@@ -522,7 +522,7 @@
       </section>
 
       <!-- Section #3a -->
-      <section class="relative mt-12">
+      <section class="relative mt-12 hidden">
         <div>
           <!-- left -->
           <div>
@@ -565,6 +565,118 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="relative mt-28 text-white">
+        <div
+          class="absolute w-[660px] h-[900px] bg-gradient-to-r from-[#AD1D00]/90 to-[#FD6A02]/90 rounded-full blur-[150px] pointer-events-none z-0"
+        ></div>
+        <div class="relative max-w-7xl mx-auto space-y-8 md:space-y-20 z-10">
+          <!-- TOP ROW -->
+          <div class="flex flex-col lg:flex-row justify-between gap-12">
+            <!-- Left -->
+            <div class="max-w-2xl">
+              <h3
+                class="anton text-5xl lg:text-6xl leading-tight tracking-tight"
+              >
+                WHY ZINZUU?
+              </h3>
+              <p class="montserrat text-xl mt-6 text-[#B3B09B] max-w-xl">
+                Because you deserve better than this:
+              </p>
+            </div>
+
+            <!-- Right -->
+            <div class="space-y-4 text-center lg:text-left">
+              <p class="text-orange-400 text-lg font-bold">
+                ⚡ First 1,000 Founders Get 2X Rewards
+              </p>
+              <button
+                class="relative p-[3px] rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium text-lg flex items-center gap-4 shadow-2xl overflow-hidden transition-all duration-300 cursor-pointer"
+              >
+                <!-- Subtle inner highlight -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent pointer-events-none"
+                ></div>
+                <span
+                  class="relative px-5 py-2 rounded-full bg-black/10 backdrop-blur-md border border-white/20 text-white font-medium text-lg flex items-center gap-4 shadow-2xl overflow-hidden transition-all duration-300 cursor-pointer z-10"
+                  >JOIN THE REBELLION ✊</span
+                >
+              </button>
+              <p class="text-neutral-300">Earn 1,000 Founder Rewards 🎁</p>
+            </div>
+          </div>
+
+          <!-- BOTTOM CARDS -->
+          <div class="grid lg:grid-cols-3 gap-4 md:gap-14 z-0">
+            <!-- Card 1 -->
+            <!-- <div
+              class="relative rounded-3xl p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-800 bg-gradient-to-br from-[#101010] to-[#101010] hover:-translate-y-2 transition-transform duration-300"
+            >
+              <h4 class="font-montserrat font-bold text-xl tracking-wide mb-6">
+                THE BRAND SCAM
+              </h4>
+
+              <p class="text-gray-400 leading-relaxed">
+                You search for Ray-Bans. You think they are legit. You get
+                fakes. Amazon gets paid.
+              </p>
+
+              <div class="glow-divider mt-8"></div>
+            </div> -->
+            <div
+              class="relative rounded-3xl p-8 shadow-2xl backdrop-blur-xl bg-[#101010]/90 border border-white/10 hover:-translate-y-2 transition-all duration-300 before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-br before:from-white/10 before:to-transparent before:opacity-40 before:pointer-events-none"
+            >
+              <h4 class="font-montserrat font-bold text-xl tracking-wide mb-6">
+                THE BRAND SCAM
+              </h4>
+
+              <p class="text-gray-400 leading-relaxed">
+                You search for Ray-Bans. You think they are legit. You get
+                fakes. Amazon gets paid.
+              </p>
+
+              <div class="glow-divider mt-8"></div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="relative rounded-3xl p-8 shadow-2xl backdrop-blur-xl bg-[#101010]/90 border border-white/10 hover:-translate-y-2 transition-all duration-300 before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-br before:from-white/10 before:to-transparent before:opacity-40 before:pointer-events-none"
+            >
+              <h4 class="font-montserrat font-bold text-xl tracking-wide mb-6">
+                THE 1/6TH RIP-OFF
+              </h4>
+
+              <p class="text-gray-400 leading-relaxed">
+                Only 1/6th of what you pay is for the product. The rest?
+                Amazon's fees and ad taxes. You pay $30. You get $5 of value.
+              </p>
+
+              <div class="glow-divider mt-8"></div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="relative rounded-3xl p-8 shadow-2xl backdrop-blur-xl bg-[#101010]/90 border border-white/10 hover:-translate-y-2 transition-all duration-300 before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-br before:from-white/10 before:to-transparent before:opacity-40 before:pointer-events-none"
+            >
+              <h4 class="font-montserrat font-bold text-xl tracking-wide mb-6">
+                OFFSHORING YOUR DOLLARS
+              </h4>
+
+              <p class="text-gray-400 leading-relaxed">
+                Amazon actively recruits overseas suppliers. 74% of new Walmart
+                sellers are from China. Your money goes overseas. Jobs
+                disappear.
+              </p>
+
+              <div class="glow-divider mt-8"></div>
+            </div>
+          </div>
+          <p class="text-center mt-8 text-lg font-bold text-[#FFFFFF]">
+            Now you understand the current rules. It’s time that we wrote some
+            new ones.
+          </p>
         </div>
       </section>
     </main>
