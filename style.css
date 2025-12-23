@@ -46,4 +46,9 @@
   font-family: "Plymdale", cursive;
 }
 
-/* button border animation */
+/* Glow effect */
+.glow-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #FD6A02, transparent);
+  opacity: 0.6;
+}
