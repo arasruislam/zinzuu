@@ -1208,21 +1208,25 @@
       });
 
       // Accordian
-      document.querySelectorAll(".accordion-trigger").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const item = btn.parentElement;
+      const accordionTriggers = document.querySelectorAll(".accordion-trigger");
+
+      accordionTriggers.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const item = trigger.closest(".accordion-item");
           const content = item.querySelector(".accordion-content");
-          const icon = btn.querySelector("i");
+          const icon = trigger.querySelector("i");
 
           const isOpen = content.style.maxHeight;
 
-          document.querySelectorAll(".accordion-content").forEach((c) => {
-            c.style.maxHeight = null;
-          });
-          document.querySelectorAll(".accordion-trigger i").forEach((i) => {
-            i.classList.remove("rotate-45");
+          // Close all accordions
+          document.querySelectorAll(".accordion-item").forEach((acc) => {
+            acc.querySelector(".accordion-content").style.maxHeight = null;
+            acc
+              .querySelector(".accordion-trigger i")
+              .classList.remove("rotate-45");
           });
 
+          // Open clicked one if it was closed
           if (!isOpen) {
             content.style.maxHeight = content.scrollHeight + "px";
             icon.classList.add("rotate-45");
