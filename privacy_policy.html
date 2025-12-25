@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZinZuu</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="./assets/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/a7358111b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="max-w-[1920px] max-auto bg-black text-white overflow-x-hidden antialiased"
+  >
+    <div class="w-full px-4 ms:px-2 md:px-8 lg:px-16 xl:px-36">
+      <!-- Header -->
+      <header
+        class="max-w-7xl mx-auto bg-neutral-900/40 backdrop-blur-md border-b border-neutral-800 sticky top-0 z-50 rounded-full mt-4"
+      >
+        <div
+          class="w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+        >
+          <!-- Logo & Brand -->
+          <div class="flex items-center space-x-2">
+            <a href="./"
+              ><img
+                src="./assets/logo.png"
+                alt="ZinZuu Logo"
+                class="h-12 w-12 object-contain"
+            /></a>
+            <h1 class="plymdale text-4xl font-bold tracking-tight">ZinZuu</h1>
+            <!-- Fixed class to font-playfair -->
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="open-menu" class="text-3xl cursor-pointer">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Popup Contact Card (hidden by default) -->
+      <div
+        id="contact-popup"
+        class="fixed inset-0 z-[60] pointer-events-none flex items-start justify-center pt-32"
+      >
+        <!-- pt-32 = just below navbar -->
+        <!-- Backdrop -->
+        <div
+          id="popup-backdrop"
+          class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 transition-opacity duration-700 ease-out"
+        ></div>
+
+        <!-- Card Panel -->
+        <div
+          id="popup-card"
+          class="relative bg-gradient-to-b from-orange-500/90 to-orange-600/90 backdrop-blur-xl rounded-3xl shadow-2xl max-w-2xl w-full mx-4 opacity-0 scale-90 transform transition-all duration-700 ease-out pointer-events-auto overflow-hidden"
+        >
+          <!-- Close Button (top right) -->
+          <div class="absolute top-4 right-4">
+            <button
+              id="close-menu"
+              class="text-white text-4xl hover:scale-110 transition-transform cursor-pointer"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Contact Content -->
+          <div class="p-6 md:p-12 pt-16 text-center text-white">
+            <!-- Extra pt for close button space -->
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h2>
+            <p class="text-lg md:text-xl leading-relaxed mb-10 opacity-90">
+              If you would like to speak with us directly, please send an email
+              to:
+            </p>
+            <a
+              href="mailto:hello@zinzuu.com"
+              class="text-2xl md:text-3xl font-bold underline-offset-4 hover:text-orange-200 transition"
+            >
+              hello@zinzuu.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mt-16 text-xl text-gray-400">Coming Soon...</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="relative mt-36 text-white">
+      <!-- Ambient glow -->
+      <div
+        class="absolute left-1/2 -translate-x-1/2 bottom-0 w-[500px] h-[300px] bg-gradient-to-r from-[#AD1D00]/70 to-[#FD6A02]/70 rounded-full blur-[200px] pointer-events-none"
+      ></div>
+
+      <div
+        class="relative p-[1px] bg-gradient-to-br from-white/15 via-white/5 to-transparent"
+      >
+        <div
+          class="bg-[#0e0e0e]/90 backdrop-blur-xl border border-white/10 px-6 md:px-10 py-10"
+        >
+          <div
+            class="flex flex-col max-w-7xl mx-auto md:flex-row justify-between items-center gap-8 text-center md:text-left"
+          >
+            <!-- LEFT -->
+            <div class="space-y-4 max-w-md">
+              <div
+                class="flex items-center justify-center md:justify-start gap-3"
+              >
+                <a href="./"
+                  ><img
+                    src="./assets/footer-logo.png"
+                    alt="ZinZuu Logo"
+                    class="h-30 w-30 object-contain"
+                /></a>
+              </div>
+
+              <p class="montserrat text-[#B3B09B] text-lg leading-relaxed">
+                The marketplace built for us.
+                <span class="text-white font-semibold">Not them.</span>
+              </p>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="space-y-3 text-sm text-[#B3B09B]">
+              <p>© 2025 ZinZuu.</p>
+
+              <div class="flex justify-center md:justify-end gap-4">
+                <a
+                  href="./privacy_policy.html"
+                  class="hover:text-white transition-colors duration-300"
+                >
+                  Privacy Policy
+                </a>
+                <span class="text-white/30">|</span>
+                <a
+                  href="./Terms_of_Redistance.html"
+                  class="hover:text-white transition-colors duration-300"
+                >
+                  Terms of Resistance
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const openBtn = document.getElementById("open-menu");
+      const closeBtn = document.getElementById("close-menu");
+      const backdrop = document.getElementById("popup-backdrop");
+      const card = document.getElementById("popup-card");
+      const popupContainer = document.getElementById("contact-popup");
+
+      function openMenu() {
+        popupContainer.classList.remove("pointer-events-none");
+        backdrop.classList.remove("opacity-0");
+        backdrop.classList.add("opacity-100");
+        card.classList.remove("opacity-0", "scale-90");
+        card.classList.add("opacity-100", "scale-100");
+      }
+
+      function closeMenu() {
+        backdrop.classList.remove("opacity-100");
+        backdrop.classList.add("opacity-0");
+        card.classList.remove("opacity-100", "scale-100");
+        card.classList.add("opacity-0", "scale-90");
+
+        setTimeout(() => {
+          popupContainer.classList.add("pointer-events-none");
+        }, 700);
+      }
+
+      openBtn.addEventListener("click", openMenu);
+      closeBtn.addEventListener("click", closeMenu);
+      backdrop.addEventListener("click", closeMenu);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+    </script>
+  </body>
+</html>
