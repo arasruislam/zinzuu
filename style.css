@@ -72,3 +72,21 @@
 .animate-breathe {
   animation: breathe 2.8s ease-in-out infinite;
 }
+
+/* Rocket Animation */
+@keyframes rocket-float {
+  0% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+}
+
+.rocket {
+  font-size: 2.5rem; /* rocket boro */
+  animation: rocket-float 2.5s ease-in-out infinite;
+}

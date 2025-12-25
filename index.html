@@ -90,7 +90,7 @@
 
       <main class="max-w-7xl mx-auto">
         <!-- Section #1a -->
-        <section class="relative mt-12">
+        <section class="relative mt-20">
           <!-- Background Glow (same logic, responsive sizes) -->
           <div
             class="absolute top-1/2 -translate-y-1/2 -left-1/6 -translate-x-1/2 w-[250px] h-[900px] md:w-[1260px] md:h-[900px] bg-gradient-to-r from-orange-500/90 to-orange-600/90 rounded-full blur-[200px] pointer-events-none z-0"
@@ -128,8 +128,8 @@
               >
                 <p>
                   <span class="text-white">When Jeff builds a new rocket</span>
-                  🚀
-                  <strong>Your Amazon orders pay for it.</strong>
+                  <span class="rocket inline-block ml-2">🚀</span>
+                  <p class="-mt-4"><strong>Your Amazon orders pay for it.</strong></p>
                 </p>
 
                 <p>
@@ -225,17 +225,24 @@
             </div>
 
             <!-- CENTER MEDIA -->
-            <div class="relative max-w-6xl mx-auto">
+             <div
+            class="relative max-w-7xl mx-auto rounded-3xl p-[2px] bg-gradient-to-br from-white/20 via-white/5 to-transparent shadow-[0_40px_120px_rgba(0,0,0,0.85)] mt-8"
+          >
+            <div
+              class="relative overflow-hidden rounded-[22px] bg-gradient-to-b from-[#151515] to-[#0e0e0e]"
+            >
+              <img
+                src="./assets/monopoly.png"
+                alt="This isn't our marketplace"
+                class="w-full object-cover object-center"
+              />
+
+              <!-- soft image vignette -->
               <div
-                class="relative border-white/10 bg-gradient-to-b from-[#151515] to-[#0e0e0e] p-2 md:p-6 rounded-2xl shadow-[0_30px_80px_rgba(0,0,0,0.6)] hover:scale-[1.01] transition-transform duration-500"
-              >
-                <img
-                  src="./assets/monopoly.png"
-                  alt="monopoly"
-                  class="rounded-xl w-full object-cover"
-                />
-              </div>
+                class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/55"
+              ></div>
             </div>
+          </div>
 
             <!-- BOTTOM CONTENT -->
             <div class="grid lg:grid-cols-3 gap-4 md:gap-14">
