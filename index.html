@@ -88,349 +88,134 @@
 
     <main>
       <!-- Section #1a -->
-      <section class="relative mt-12 hidden md:flex">
+      <section class="relative mt-12">
+        <!-- Background Glow (same logic, responsive sizes) -->
         <div
-          class="absolute top-1/2 -translate-y-1/2 -left-1/6 -translate-x-1/2 w-[1260px] h-[900px] bg-gradient-to-r from-orange-500/90 to-orange-600/90 rounded-full blur-[200px] pointer-events-none z-0"
+          class="absolute top-1/2 -translate-y-1/2 -left-1/6 -translate-x-1/2 w-[250px] h-[900px] md:w-[1260px] md:h-[900px] bg-gradient-to-r from-orange-500/90 to-orange-600/90 rounded-full blur-[200px] pointer-events-none z-0"
         ></div>
 
         <div
-          class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10"
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10"
         >
-          <!-- Left: Text Content -->
-          <div class="space-y-10">
+          <!-- TEXT CONTENT -->
+          <div class="space-y-6 lg:space-y-10 text-center lg:text-left">
             <!-- Big Title -->
             <div
-              class="flex items-start xl:items-center gap-4 justify-center lg:justify-start"
+              class="flex justify-center lg:justify-start items-center gap-4"
             >
               <h2
-                class="anton text-4xl lg:text-8xl leading-none text-white drop-shadow-2xl"
+                class="anton text-5xl lg:text-8xl leading-none text-white drop-shadow-2xl"
               >
                 Local
               </h2>
               <h3
-                class="playfair text-3xl lg:text-7xl leading-none text-[#FD6A02] drop-shadow-xl z-10 font-bold"
+                class="playfair text-4xl lg:text-7xl leading-none text-[#FD6A02] drop-shadow-xl z-10 font-bold"
               >
                 Or
               </h3>
               <h2
-                class="anton text-4xl lg:text-8xl leading-none text-white drop-shadow-2xl"
+                class="anton text-5xl lg:text-8xl leading-none text-white drop-shadow-2xl"
               >
                 Lunar?
               </h2>
             </div>
 
             <!-- Body Text -->
-            <div class="space-y-6 text-lg lg:text-xl text-neutral-300">
+            <div
+              class="space-y-4 text-lg lg:text-xl text-neutral-300 max-w-xl mx-auto lg:mx-0"
+            >
               <p>
-                <span class="text-white">When Jeff builds a new rocket</span>
-                🚀
+                <span class="text-white">When Jeff builds a new rocket</span> 🚀
                 <strong>Your Amazon orders pay for it.</strong>
               </p>
+
               <p>
                 Every time you shop Amazon or Walmart, you enrich Wall Street
                 shareholders and slowly kill Main Street merchants.
               </p>
+
               <p class="text-white text-2xl font-bold">Not anymore.</p>
+
               <p>
                 <strong>Enter ZinZuu –</strong>
-                <span class="text-2xl text-white"
-                  >The People's Marketplace.</span
-                >
+                <span class="text-2xl text-white">
+                  The People's Marketplace.
+                </span>
               </p>
-              <p>
+
+              <!-- Only show on desktop (same as before) -->
+              <p class="hidden lg:block">
                 We’re not just breaking the rules.
                 <strong>We’re building new ones.</strong>
               </p>
             </div>
 
-            <!-- CTA Section -->
-            <div class="pt-8 space-y-6 text-center lg:text-left">
+            <!-- CTA -->
+            <div
+              class="pt-2 space-y-2 flex flex-col items-center lg:items-start"
+            >
               <p class="text-orange-400 text-lg font-bold">
                 ⚡ First 1,000 Founders Get 2X Rewards
               </p>
+
               <button
                 class="relative p-[3px] rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium text-lg flex items-center gap-4 shadow-2xl overflow-hidden transition-all duration-300 cursor-pointer"
               >
-                <!-- Subtle inner highlight -->
                 <div
                   class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent pointer-events-none"
                 ></div>
+
                 <span
-                  class="relative px-5 py-2 rounded-full bg-black/10 backdrop-blur-md border border-white/20 text-white font-medium text-lg flex items-center gap-4 shadow-2xl overflow-hidden transition-all duration-300 cursor-pointer z-10"
-                  >JOIN THE REBELLION ✊</span
+                  class="relative px-5 py-2 rounded-full bg-black/20 backdrop-blur-md border border-white/20 z-10"
                 >
+                  JOIN THE REBELLION ✊
+                </span>
               </button>
+
               <p class="text-neutral-300">Earn 1,000 Founder Rewards 🎁</p>
             </div>
           </div>
 
-          <!-- Right: Hero Image -->
-          <div class="flex justify-center lg:justify-end h-[700px]">
-            <img
-              src="./assets/eZZ-Shop-png.png"
-              alt="ZinZuu Hero"
-              class="max-w-full h-auto drop-shadow-2xl"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Mobile Section #1b  -->
-      <section class="relative mt-12 flex md:hidden">
-        <!-- <div
-          class="absolute top-1/2 -translate-y-1/2 -left-1/6 -translate-x-1/2 w-[150px] h-[700px] lg:w-[1260px] lg:h-[900px] bg-gradient-to-r from-orange-500/90 to-orange-600/90 rounded-full blur-[200px] pointer-events-none z-0"
-        ></div> -->
-
-        <div
-          class="absolute top-1/2 -translate-y-1/2 -left-1/6 -translate-x-1/2 w-[250px] h-[900px] bg-gradient-to-r from-orange-500/90 to-orange-600/90 rounded-full blur-[200px] pointer-events-none z-0"
-        ></div>
-
-        <div
-          class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10"
-        >
-          <!-- Left: Text Content -->
-          <div class="space-y-4 z-10 text-center md:text-start">
-            <!-- Big Title -->
-            <div
-              class="flex justify-center items-center md:items-start -space-y-[20px] xl:items-center gap-4 justify-center lg:justify-start"
-            >
-              <h2
-                class="anton text-5xl lg:text-8xl leading-none text-white drop-shadow-2xl"
-              >
-                Local
-              </h2>
-              <h3
-                class="playfair text-4xl lg:text-7xl leading-none text-[#FD6A02] drop-shadow-xl z-10"
-              >
-                Or
-              </h3>
-              <h2
-                class="anton text-5xl lg:text-8xl leading-none text-white drop-shadow-2xl"
-              >
-                Lunar?
-              </h2>
-            </div>
-
-            <!-- Body Text -->
-            <div class="space-y-6 text-lg lg:text-xl text-neutral-300">
-              <p>
-                <span class="text-white">When Jeff builds a new rocket</span>
-                🚀
-                <strong>Your Amazon orders pay for it.</strong>
-              </p>
-              <p>
-                Every time you shop Amazon or Walmart, you enrich Wall Street
-                shareholders and slowly kill Main Street merchants.
-              </p>
-              <p class="text-white text-2xl font-bold">Not anymore.</p>
-              <p>
-                <strong>Enter ZinZuu –</strong>
-                <span class="text-2xl text-white"
-                  >The People's Marketplace.</span
-                >
-              </p>
-              <!-- <p>
-                We’re not just breaking the rules.
-                <strong>We’re building new ones.</strong>
-              </p> -->
-            </div>
-
-            <!-- CTA Section -->
-            <div
-              class="pt-0 space-y-6 text-center lg:text-left flex flex-col items-center"
-            >
-              <p class="text-orange-400 text-lg font-bold">
-                ⚡ First 1,000 Founders Get 2X Rewards
-              </p>
-              <button
-                class="relative p-[3px] rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium text-lg flex items-center gap-4 shadow-2xl overflow-hidden transition-all duration-300 cursor-pointer"
-              >
-                <!-- Subtle inner highlight -->
-                <div
-                  class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent pointer-events-none"
-                ></div>
-                <span
-                  class="relative px-5 py-2 rounded-full bg-black/30 backdrop-blur-md border border-white/20 text-white font-medium text-lg flex items-center gap-4 shadow-2xl overflow-hidden transition-all duration-300 cursor-pointer z-10"
-                  >JOIN THE REBELLION ✊</span
-                >
-              </button>
-              <p class="text-neutral-400 pt-3">Earn 1,000 Founder Rewards 🎁</p>
-            </div>
-          </div>
-
-          <!-- Right: Hero Image -->
-          <!-- <div
-            class="flex justify-center lg:justify-end h-[700px] absolute z-0 opacity-5"
+          <!-- HERO IMAGE -->
+          <div
+            class="flex justify-center lg:justify-end hidden lg:flex h-[700px]"
           >
             <img
               src="./assets/eZZ-Shop-png.png"
               alt="ZinZuu Hero"
-              class="max-w-full h-auto drop-shadow-2xl"
+              class="w-[300px] lg:w-auto h-auto drop-shadow-2xl"
             />
-          </div> -->
+          </div>
         </div>
       </section>
 
       <!-- Section #2a -->
-      <section class="relative mt-12 hidden">
-        <div class="space-y-8">
-          <!-- left -->
-          <div class="flex justify-between items-center">
-            <div>
-              <h3 class="anton text-5xl">THE GAME IS RIGGED</h3>
-              <p class="montserrat text-xl mt-4 text-[#B3B09B]">
-                They've built a capital extraction machine that siphons billions
-                from our communities.
-              </p>
-            </div>
-            <div>
-              <h5 class="montserrat font-bold text-xl">
-                This isn't commerce. <br />
-                It's exploitation
-              </h5>
-              <h6 class="montserrat font-bold text-md">
-                And it’s why we’re building new rules.
-              </h6>
-            </div>
-          </div>
-          <!-- center -->
-          <div
-            class="max-w-7xl mx-auto border border-1 p-6 bg-[#101010] rounded-xl"
-          >
-            <img
-              src="./assets/monopoly.png"
-              alt="monopoly"
-              class="rounded-xl"
-            />
-          </div>
-          <!-- right -->
-          <div>
-            <!-- cards -->
-            <div>
-              <h4>Search Manipulation</h4>
-              <p>
-                Top spots go to highest bidders.Quality is buried by factory
-                clones.The Cost: You pay a hidden "Ad Tax."
-              </p>
-            </div>
-            <div>
-              <h4>Surveillance Pricing</h4>
-              <p>
-                They track your clicks to charge the absolute max they know
-                you'll pay.The Reality: You’ve been played.
-              </p>
-            </div>
-            <div>
-              <h4>Predatory Cloning</h4>
-              <p>
-                They copy bestselling products. Undercut the with "Amazon
-                Basics". Then slowly bleed the original creator dry
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="relative mt-28 text-white hidden">
-        <div class="max-w-7xl mx-auto space-y-16">
-          <!-- TOP ROW (like reference heading area) -->
-          <div class="flex flex-col lg:flex-row justify-between gap-10">
-            <!-- Left -->
-            <div class="max-w-2xl">
-              <h3 class="anton text-5xl lg:text-6xl leading-tight">
-                THE GAME IS RIGGED
-              </h3>
-              <p class="montserrat text-xl mt-6 text-[#B3B09B]">
-                They've built a capital extraction machine that siphons billions
-                from our communities.
-              </p>
-            </div>
-
-            <!-- Right -->
-            <div class="flex flex-col justify-center">
-              <h5 class="montserrat font-bold text-xl leading-snug">
-                This isn't commerce. <br />
-                It's exploitation
-              </h5>
-              <h6 class="montserrat font-bold text-md mt-2">
-                And it’s why we’re building new rules.
-              </h6>
-            </div>
-          </div>
-
-          <!-- CENTER MEDIA (main focus like reference video card) -->
-          <div class="relative max-w-6xl mx-auto">
-            <div
-              class="relative rounded-2xl p-2 md:p-8 shadow-2xl backdrop-blur-md border-l border-t border-neutral-950 bg-gradient-to-br from-[#101010] to-black hover:-translate-y-2 transition-transform duration-300"
-            >
-              <img
-                src="./assets/monopoly.png"
-                alt="monopoly"
-                class="rounded-xl w-full object-cover"
-              />
-            </div>
-          </div>
-
-          <!-- BOTTOM CONTENT (side-by-side like reference lower text) -->
-          <div class="grid lg:grid-cols-3 gap-12">
-            <div class="border-r border-[#B3B09B] pr-4">
-              <h4 class="montserrat font-bold text-lg mb-3">
-                Search Manipulation
-              </h4>
-              <p class="text-[#B3B09B] leading-relaxed">
-                Top spots go to highest bidders.Quality is buried by factory
-                clones.The Cost: You pay a hidden "Ad Tax."
-              </p>
-            </div>
-
-            <div class="border-r border-[#B3B09B] pr-4">
-              <h4 class="montserrat font-bold text-lg mb-3">
-                Surveillance Pricing
-              </h4>
-              <p class="text-[#B3B09B] leading-relaxed">
-                They track your clicks to charge the absolute max they know
-                you'll pay.The Reality: You’ve been played.
-              </p>
-            </div>
-
-            <div class="pr-4">
-              <h4 class="montserrat font-bold text-lg mb-3">
-                Predatory Cloning
-              </h4>
-              <p class="text-[#B3B09B] leading-relaxed">
-                They copy bestselling products. Undercut the with "Amazon
-                Basics". Then slowly bleed the original creator dry
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="relative mt-36 text-white">
         <div class="relative max-w-7xl mx-auto space-y-8 md:space-y-20">
           <!-- TOP ROW -->
-          <div class="flex flex-col lg:flex-row justify-between gap-12">
+          <div>
             <!-- Left -->
-            <div class="max-w-2xl">
-              <h3
-                class="anton text-5xl lg:text-6xl leading-tight tracking-tight"
-              >
-                THE GAME IS RIGGED
-              </h3>
-              <p class="montserrat text-xl mt-6 text-[#B3B09B] max-w-xl">
-                They've built a capital extraction machine that siphons billions
-                from our communities.
-              </p>
-            </div>
+            <h3 class="anton text-5xl lg:text-6xl leading-tight tracking-tight">
+              THE <span class="anton text-[#FD6A02]">GAME</span> IS RIGGED
+            </h3>
 
             <!-- Right -->
-            <div class="flex flex-col justify-center">
-              <h5 class="montserrat font-bold text-xl leading-snug">
-                This isn't commerce. <br />
-                It's exploitation
-              </h5>
-              <h6 class="montserrat font-bold text-md mt-3 text-[#B3B09B]">
-                And it’s why we’re building new rules.
-              </h6>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="montserrat text-xl mt-6 text-[#B3B09B] max-w-xl">
+                  They've built a capital extraction machine that siphons
+                  billions from our communities.
+                </p>
+              </div>
+              <div>
+                <h5 class="montserrat font-bold text-xl leading-snug">
+                  This isn't commerce. <br />
+                  It's exploitation
+                </h5>
+                <h6 class="montserrat font-bold text-md mt-3 text-[#B3B09B]">
+                  And it’s why we’re building new rules.
+                </h6>
+              </div>
             </div>
           </div>
 
@@ -522,56 +307,23 @@
               <div class="glow-divider mt-8"></div>
             </div>
           </div>
+
+          <!-- Right -->
+          <div
+            class="flex flex-col justify-center items-center block lg:hidden"
+          >
+            <h5 class="montserrat font-bold text-xl text-center leading-snug">
+              This isn't commerce. <br />
+              It's exploitation
+            </h5>
+            <h6 class="montserrat font-bold text-md mt-3 text-[#B3B09B]">
+              And it’s why we’re building new rules.
+            </h6>
+          </div>
         </div>
       </section>
 
       <!-- Section #3a -->
-      <section class="relative mt-12 hidden">
-        <div>
-          <!-- left -->
-          <div>
-            <div>
-              <h3>WHY ZINZUU?</h3>
-              <p>Because you deserve better than this:</p>
-            </div>
-            <div>
-              <h5>
-                This isn't commerce. <br />
-                It's exploitation
-              </h5>
-              <h6>And it’s why we’re building new rules.</h6>
-            </div>
-          </div>
-
-          <!-- right -->
-          <div>
-            <!-- cards -->
-            <div>
-              <h4>THE BRAND SCAM</h4>
-              <p>
-                You search for Ray-Bans. You think they are legit. You get
-                fakes. Amazon gets paid.
-              </p>
-            </div>
-            <div>
-              <h4>THE 1/6TH RIP-OFF</h4>
-              <p>
-                Only 1/6th of what you pay is for the product. The rest?
-                Amazon's fees and ad taxes. You pay $30. You get $5 of value.
-              </p>
-            </div>
-            <div>
-              <h4>OFFSHORING YOUR DOLLARS</h4>
-              <p>
-                Amazon actively recruits overseas suppliers. 74% of new Walmart
-                sellers are from China. Your money goes overseas. Jobs
-                disappear.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="relative mt-36 text-white">
         <div
           class="absolute w-[300px] lg:w-[660px] h-[500px] bg-gradient-to-r from-[#AD1D00]/90 to-[#FD6A02]/90 rounded-full blur-[150px] pointer-events-none z-0"
@@ -584,7 +336,7 @@
               <h3
                 class="anton text-5xl lg:text-6xl leading-tight tracking-tight"
               >
-                WHY ZINZUU?
+                WHY <span class="anton text-[#FD6A02]">ZINZUU?</span>
               </h3>
               <p class="montserrat text-xl mt-6 text-[#B3B09B] max-w-xl">
                 Because you deserve better than this:
@@ -713,7 +465,8 @@
           <div class="w-full">
             <!-- Left -->
             <h3 class="anton text-5xl lg:text-6xl leading-tight tracking-tight">
-              THE WALL STREET EXTRACTION MACHINE.
+              THE WALL STREET
+              <span class="anton text-[#FD6A02]"> EXTRACTION MACHINE.</span>
             </h3>
 
             <!-- Right -->
@@ -811,7 +564,7 @@
           </div>
 
           <div
-            class="space-y-4 text-center flex items-center flex-col lg:text-left hidden lg:flex"
+            class="space-y-4 text-center flex items-center flex-col lg:text-left block lg:hidden"
           >
             <p class="text-orange-400 text-lg font-bold">
               ⚡ First 1,000 Founders Get 2X Rewards
@@ -837,7 +590,7 @@
       <section class="relative mt-36 text-white">
         <!-- Ambient glow -->
         <div
-          class="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[600px] bg-gradient-to-r from-[#FD6A02]/40 to-[#AD1D00]/40 rounded-full blur-[160px] pointer-events-none"
+          class="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-[#AD1D00]/90 to-[#FD6A02]/90 rounded-full blur-[160px] pointer-events-none"
         ></div>
 
         <!-- ================= SECTION HEADER ================= -->
