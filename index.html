@@ -723,7 +723,7 @@
                 community survival. Every time you spend $1, you’re voting on
                 where your wealth goes.
               </p>
-              <div class="space-y-2">
+              <div class="space-y-2 hidden lg:block">
                 <p class="text-orange-400 text-lg font-bold">
                   ⚡ First 1,000 Founders Get 2X Rewards
                 </p>
@@ -809,10 +809,31 @@
               <div class="glow-divider mt-8"></div>
             </div>
           </div>
+
+          <div
+            class="space-y-4 text-center flex items-center flex-col lg:text-left hidden lg:flex"
+          >
+            <p class="text-orange-400 text-lg font-bold">
+              ⚡ First 1,000 Founders Get 2X Rewards
+            </p>
+            <button
+              class="relative p-[3px] rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium text-lg flex items-center gap-4 shadow-2xl overflow-hidden transition-all duration-300 cursor-pointer"
+            >
+              <!-- Subtle inner highlight -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent pointer-events-none"
+              ></div>
+              <span
+                class="relative px-5 py-2 rounded-full bg-black/10 backdrop-blur-md border border-white/20 text-white font-medium text-lg flex items-center gap-4 shadow-2xl overflow-hidden transition-all duration-300 cursor-pointer z-10"
+                >JOIN THE REBELLION ✊</span
+              >
+            </button>
+            <p class="text-neutral-300">Earn 1,000 Founder Rewards 🎁</p>
+          </div>
         </div>
       </section>
 
-      <!-- Section #51 -->
+      <!-- Section #5a -->
       <section class="relative mt-36 text-white">
         <!-- Ambient glow -->
         <div
@@ -835,9 +856,7 @@
             >
               <!-- LEFT: DESCRIPTION -->
               <div class="max-w-5xl">
-                <p
-                  class="montserrat text-xl text-[#B3B09B] leading-relaxed"
-                >
+                <p class="montserrat text-xl text-[#B3B09B] leading-relaxed">
                   ZinZuu gives you in-store trust with online connection —
                   <span class="text-white font-semibold">
                     without fakes, manipulation, or corporate extraction.
@@ -848,7 +867,7 @@
               </div>
 
               <!-- RIGHT: SUPPORTING LINE -->
-              <p class="text-lg text-[#B3B09B] max-w-md">
+              <p class="text-lg text-[#B3B09B] max-w-md hidden lg:flex">
                 In-store experience. Online convenience.
                 <span class="text-white font-semibold">All-in-one app.</span>
               </p>
@@ -858,17 +877,15 @@
 
         <!-- ================= CONTENT GRID ================= -->
         <div
-          class="relative max-w-7xl mx-auto grid lg:grid-cols-3 gap-16 lg:gap-24 items-center z-10"
+          class="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16 items-center z-10"
         >
-          <!-- LEFT: IMAGE (ENHANCED SIZE) -->
-          <div class="flex justify-center lg:justify-start relative">
-            <div>
-              <img
-                src="./assets/hero.gif"
-                alt="ZinZuu App Experience"
-                class="rounded-[32px] w-full h-auto drop-shadow-2xl scale-[1.03]"
-              />
-            </div>
+          <!-- IMAGE (MOBILE: TOP | DESKTOP: RIGHT) -->
+          <div class="order-1 lg:order-3 flex justify-center relative">
+            <img
+              src="./assets/hero.gif"
+              alt="ZinZuu App Experience"
+              class="rounded-[32px] w-full max-w-[420px] sm:max-w-[480px] lg:max-w-full h-auto drop-shadow-2xl scale-[1.03]"
+            />
 
             <!-- soft frame glow -->
             <div
@@ -876,80 +893,10 @@
             ></div>
           </div>
 
-          <!-- RIGHT: FEATURE STACK -->
-          <div class="space-y-14 hidden">
-            <div class="relative space-y-4">
-              <!-- vertical guide -->
-              <div
-                class="hidden lg:block absolute left-3 top-4 bottom-4 w-px bg-white/10"
-              ></div>
-
-              <!-- eZZ-SEARCH -->
-              <div
-                class="relative pl-10 rounded-2xl p-6 backdrop-blur-xl bg-[#101010]/90 border border-white/10 hover:-translate-y-1 hover:border-white/20 transition-all duration-300"
-              >
-                <span
-                  class="absolute left-0 top-6 w-3 h-3 rounded-full bg-orange-400"
-                ></span>
-
-                <h4 class="montserrat font-bold text-lg mb-2 text-orange-400">
-                  eZZ-SEARCH
-                </h4>
-                <p class="text-gray-300 leading-relaxed">
-                  Ranked by quality — not highest bidder.<br />
-                  No surge pricing. No price manipulation.<br />
-                  <span class="text-white font-semibold">
-                    Fair prices. Best recommendations.
-                  </span>
-                </p>
-              </div>
-
-              <!-- eZZ-BUY -->
-              <div
-                class="relative pl-10 rounded-2xl p-6 backdrop-blur-xl bg-[#101010]/90 border border-white/10 hover:-translate-y-1 hover:border-white/20 transition-all duration-300"
-              >
-                <span
-                  class="absolute left-0 top-6 w-3 h-3 rounded-full bg-orange-400"
-                ></span>
-
-                <h4 class="montserrat font-bold text-lg mb-2 text-orange-400">
-                  eZZ-BUY
-                </h4>
-                <p class="text-gray-300 leading-relaxed">
-                  Skip the checkout lines.<br />
-                  Scan, pay, and walk out.<br />
-                  <span class="text-white font-semibold">
-                    The speed of Amazon. The soul of local.
-                  </span>
-                </p>
-              </div>
-
-              <!-- eZZ-CHAT -->
-              <div
-                class="relative pl-10 rounded-2xl p-6 backdrop-blur-xl bg-[#101010]/90 border border-white/10 hover:-translate-y-1 hover:border-white/20 transition-all duration-300"
-              >
-                <span
-                  class="absolute left-0 top-6 w-3 h-3 rounded-full bg-orange-400"
-                ></span>
-
-                <h4 class="montserrat font-bold text-lg mb-2 text-orange-400">
-                  eZZ-CHAT
-                </h4>
-                <p class="text-gray-300 leading-relaxed">
-                  Connect directly with sellers.<br />
-                  No gatekeepers. No runaround.<br />
-                  <span class="text-white font-semibold">
-                    Real people. Fast solutions.
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT: FEATURE STACK (2 UP + 1 DOWN) -->
-          <div class="space-y-4 col-span-2">
+          <!-- FEATURE STACK (MOBILE: BELOW IMAGE | DESKTOP: CENTER/LEFT) -->
+          <div class="order-2 lg:order-2 col-span-1 lg:col-span-2 space-y-6">
             <!-- TOP ROW -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <!-- Card 1 -->
               <div
                 class="group relative rounded-3xl p-8 bg-[#0e0e0e] border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.6)] hover:-translate-y-1 hover:border-white/20 transition-all duration-300"
@@ -1038,6 +985,13 @@
             </div>
           </div>
         </div>
+
+        <p
+          class="text-lg text-[#B3B09B] text-center mt-4 flex flex-col lg:hidden"
+        >
+          In-store experience. Online convenience.
+          <span class="text-white font-semibold">All-in-one app.</span>
+        </p>
       </section>
     </main>
 
