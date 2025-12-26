@@ -1,7 +1,7 @@
 Color Codes:
 Primary Color - #FD6A02
 Secondary Color - #AD1D00
-Text Color - #B3B09B, #FFFFFF
+Text Color - #B3B09B, #FFFFFF, #B9B3C5
 Background Color - #171717
 Card Background - #101010
 

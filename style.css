@@ -90,3 +90,10 @@
   font-size: 2.5rem; /* rocket boro */
   animation: rocket-float 2.5s ease-in-out infinite;
 }
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(to right, #ffffff, #b9b3c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
